@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "automlaks4c51737678c-4792"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "automlaks4c51737678c-4792"
+  template:
+    metadata:
+      labels:
+        app: "automlaks4c51737678c-4792"
+    spec:
+      containers:
+        - name: "automlaks4c51737678c-4792"
+          image: "6fe5c1a5f47c4c67acbf7c06427f5bc8.azurecr.io/automlaks4c51737678c"
+          ports:
+          - containerPort: 5000
