@@ -52,7 +52,7 @@ data = {
 
 body = str.encode(json.dumps(data))
 
-url = 'http://20.221.6.249:80/api/v1/service/aks-service/score'
+url = 'http://a8c9227a-44da-4a87-95bc-879e2597f8da.eastus.azurecontainer.io/score'
 api_key = 'mwmzRYDjqHMdTIO5H1xoBIVA24nVy4FZ'    # Replace this with the API key for the web service
 headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
