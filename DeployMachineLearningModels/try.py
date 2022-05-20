@@ -74,7 +74,7 @@ allowSelfSignedHttps(True) # this line is needed if you use self-signed certific
 body = str.encode(json.dumps(data))
 
 url = 'http://20.221.6.249:80/api/v1/service/aks-service/score'
-api_key = os.environ.get('CCProject')    # Replace this with the API key for the web service
+api_key = 'mwmzRYDjqHMdTIO5H1xoBIVA24nVy4FZ'    # Replace this with the API key for the web service
 headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
 req = urllib.request.Request(url, body, headers)
